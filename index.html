@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User directory</title>
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen bg-[#080a0f] text-white">
+  <div class="min-h-screen px-5 py-5">
+    <div class="w-full max-w-[445px] mx-auto bg-[#555] border border-white/30 rounded-2xl px-7 py-4">
+      <h1 class="text-center text-2xl font-bold mb-4">
+        Add User
+      </h1>
+      <form class="space-y-4">
+        <div>
+          <label class="block font-bold mb-2">
+            Name
+          </label>
+          <input class=" w-full h-10 rounded-lg bg-[#e8e6e6] px-3 text-black outline-none"
+           type="text"
+            id="name"
+            name="name" required>
+        </div>
+        <div>
+          <label class="block font-bold mb-2">
+            Role
+          </label>
+          <input
+            type="text"
+            id="role"
+            name="role" required
+            class="w-full h-10 rounded-lg bg-[#e8e6e6] px-3 text-black outline-none"
+          >
+        </div>
+        <div>
+          <label class="block font-bold mb-2">
+            Bio
+          </label>
+          <textarea
+            rows="3"
+            class="w-full rounded-lg bg-[#e8e6e6] px-3 py-2 text-black outline-none resize-none"
+            id="bio"
+            name="bio" required
+          ></textarea>
+        </div>
+        <div>
+          <label class="block font-bold mb-2">
+            Photo URL
+          </label>
+          <input
+            type="url"
+            id="photo"
+            name="photo" required
+            class="w-full h-10 rounded-lg bg-[#e8e6e6] px-3 text-black outline-none"
+          >
+        </div>
+        <button
+          type="submit"
+          class="w-full h-12 rounded-lg border border-white/30 font-bold text-lg hover:bg-white/10 transition"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <div class=" users max-w-[980px] mx-auto mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
